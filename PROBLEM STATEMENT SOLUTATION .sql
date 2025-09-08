@@ -408,6 +408,8 @@ SELECT * FROM ipl_standings;
 SELECT * FROM ipl_tournament;
 SELECT * FROM ipl_user;
 
+
+
 --  Problem Statement:01  Show the percentage of wins of each bidder in the order of highest to lowest percentage.
 #Tables Used:
 SELECT * FROM  ipl_bidding_details;
@@ -429,6 +431,9 @@ ORDER BY
 
 -- Conclusion:This query will give us a list of bidders along with their win percentages, ordered from the highest win percentage to the lowest. 
 -- It helps in understanding which bidders have been most successful in winning bids in the IPL bidding process.
+
+
+
 
 -- Problem Statement:02  Display the number of matches conducted at each stadium with the stadium name and city.
 #Tables Used:
@@ -455,7 +460,10 @@ ORDER BY
     
  -- Conclusion:This query provides us with a list of stadiums along with their respective cities and the number of
  --            matches conducted in each stadium.
---             It helps in understanding the distribution of matches across different stadiums and cities in the IPL.  
+--             It helps in understanding the distribution of matches across different stadiums and cities in the IPL.
+
+
+
 
 -- Problem Statement:03  In a given stadium, what is the percentage of wins by a team which has won the toss?
 
@@ -480,6 +488,9 @@ ORDER BY
     
 -- Conclusion: This query provides us with the percentage of matches won by the team that won the toss in each stadium. 
 --             It helps in understanding the correlation between winning the toss and winning the match in different stadiums in the IPL.
+
+
+
 
 --  Problem Statement:04  Show the total bids along with the bid team and team name.
 
@@ -506,6 +517,9 @@ ORDER BY
 --               The output includes the bid team, team name, and the count of bids for each team.
 
 
+
+
+
 -- Problem Statement:05   Show the team id who won the match as per the win details.
 #Tables Used:
 SELECT * FROM  ipl_match;
@@ -522,6 +536,8 @@ INNER JOIN
 -- Conclusion:  This SQL query retrieves the team ID and win details from the ipl_match table.
 --              It joins the ipl_match table with the ipl_team table based on the team ID present in both tables.
 --              The output includes the team ID of the team that won the match as per the win details.
+
+
 
 
 
@@ -551,6 +567,9 @@ GROUP BY
 --             The output includes the team ID, team name, total matches played, total matches won, and total matches lost for each team.    
 
 
+
+
+
 -- Problem Statement:07  Display the bowlers for the Mumbai Indians team.
 
 #Tables Used:
@@ -576,6 +595,10 @@ WHERE
 -- Conclusion:  This SQL query retrieves the bowlers for the Mumbai Indians team.
 --               It filters data to consider only players whose role contains the term 'Bowler' and who belong to the Mumbai Indians team.
 --                The output includes the player ID, player name, player role, and team name.
+
+
+
+
 
 -- Problem Statement 8. How many all-rounders are there in each team, Display the teams with more than 4  all-rounders in descending order
 
@@ -603,6 +626,10 @@ ORDER BY ALL_ROUNDERS DESC;
 --               It filters data to consider only players whose role is 'All-Rounder'.
 --               The output includes the team ID, team name, and the count of all-rounders.
 --                Results are ordered in descending order of the count of all-rounders.
+
+
+
+
 
 /*
 -- Problem Statement 9:-  Write a query to get the total bidders points for each bidding status of those bidders who bid on CSK when it won the match in 
@@ -645,6 +672,10 @@ WHERE
 --              The output includes the bidding status, bid date as year, and total bidder's points.
 --               Results are ordered in descending order of total bidders' points and then by year
 
+
+
+
+
 /**10. Problem Statement-10
 
 Extract the Bowlers and All Rounders those are in the 5 highest number of wickets.
@@ -676,6 +707,9 @@ WHERE op.PLAYER_ROLE IN ('All-Rounder', 'Bowler') AND op.PLAYER_RANK <= 5;
 --             The players are then ranked based on the wicket count using the DENSE_RANK() function.
 --              The output includes team name, player name, and player role.
 --               Players are filtered to include only those with a wicket rank within the top 5.
+
+
+
 
 
 -- Problem Statement:11  show the percentage of toss wins of each bidder and display the results in descending order based on the percentage
@@ -713,6 +747,10 @@ ORDER BY
 --              The output includes bidder ID, bidder name, and toss win percentage.
 --               Results are ordered in descending order based on the toss win percentage.
 
+
+
+
+
 /** Problem Statement:12
  find the IPL season which has min duration and max duration.
 Output columns should be like the below:
@@ -739,6 +777,10 @@ HAVING
 -- Conclusion --: This classification is indicated in the "Duration_Column" column, 
 --                  which will show either "Max_duration" or "Min_duration" based on the
 --                 comparison of each tournament's duration with the maximum and minimum durations found in the dataset.
+
+
+
+
 
 /** Problem Statement:13
  Write a query to display to calculate the total points month-wise for the 2017 bid year. sort the results based on total 
@@ -786,6 +828,10 @@ ORDER BY
 --            Results are grouped by bidder ID, bidder name, year, and month, and then sorted by total points in descending order 
 --             and month-wise in ascending order.
 
+
+
+
+
 /** Problem Statement:14
  Write a query to display to calculate the total points month-wise for the 2017 bid year. sort the results based on total 
 points in descending order and month-wise in ascending order.
@@ -793,7 +839,6 @@ Note: Display the following columns:
 1. Bidder ID, 2. Bidder Name, 3. bid date as Year, 4. bid date as Month, 5. Total points
 Don't use joins for the above query queries.
 **/
-
 
 # Table Used:
 SELECT * FROM ipl_bidder_details;
@@ -839,6 +884,10 @@ ORDER BY
 --             Results are grouped by bidder ID, bidder name, year, and month, and then sorted by total points
 --              in descending order and month-wise in ascending order.
 
+
+
+
+
 /* Problem Statement:15
  Write a query to get the top 3 and bottom 3 bidders based on the total bidding points for the 2018 bidding year.
 Output columns should be:
@@ -880,6 +929,10 @@ SELECT * FROM (
 --             It calculates the total bidding points for each bidder and ranks them accordingly.
 --              The output includes bidder ID, total points, and the names of the top 3 and bottom 3 bidders.
 --             Results are sorted by rank in descending order.
+
+
+
+
 
 /*
 16.  Create two tables called Student_details and Student_details_backup.
