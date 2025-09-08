@@ -4,10 +4,10 @@ Pie-in-the-Sky is a mobile app that is used for bidding for IPL matches legally.
 The app shows the match details which include the playing team, the venue of the match, and the current standing of the teams on the points table. It will display the winner at the end of the match and update the team standings in the tournament and bidder points table. System will send updates to the bidders whenever required. It will also generate the bidders' leaderboard.
 App functionalities:
 
-● Predict Winner
+● Predict Winner -
 The app allows the user to predict the winner of the match before the toss happens for the match on which the user is predicting. This is dynamic as the matches can have a different start time. Start time will also be influenced by disruptions like rains and other unforeseen circumstances. Users will not be able to see what others have predicted. Users can change the team bids only till the toss happens. Once the toss happens everything freezes for that match.
 
-● Point System
+● Point System -
 For every win, users get points. There are no negative points, meaning if the user loses the bid, he or she does not lose his/her points. The Point system is very dynamic. 
 At the start of the tournament when every team is at zero points, every user who wins the prediction wins 2 points.
 If the difference in the points between two teams playing, is <= 6, but > 0, then the person who predicts: 
@@ -17,7 +17,7 @@ If the difference in the points between two teams playing is > 6, then the perso
 -Team with higher points will win, gets 2 points 
 -Team with lower points will win, gets 5 points
 
-● Leaderboard
+● Leaderboard -
 At every time the user will be able to see his/her points and his/her position in the overall user standings. He/she will also be able to see the top 3 leader positions
 
 A bidder can do the following things using this app:
